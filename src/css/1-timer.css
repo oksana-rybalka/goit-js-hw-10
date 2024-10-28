@@ -21,6 +21,10 @@ width: 1440px;
     outline: 1px solid #4e75ff;
       
 }
+.container-time input:disabled {
+    border-color: #808080;
+    color: #808080;
+}
 .back-btn,
 .nav-btn {
     text-decoration: none;
@@ -55,6 +59,9 @@ width: 1440px;
 }
 .container-time button:hover {
     background: #6c8cff;
+}
+.container-time button:disabled {
+    background-color: #808080;
 }
 .field {
     display: flex;
