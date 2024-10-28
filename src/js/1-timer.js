@@ -60,6 +60,12 @@ function convertMs(ms) {
 
   return { days, hours, minutes, seconds };
 }
+
+console.log(convertMs(2000)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
+console.log(convertMs(140000)); // {days: 0, hours: 0, minutes: 2, seconds: 20}
+console.log(convertMs(24140000)); // {days: 0, hours: 6 minutes: 42, seconds: 20}
+
+
 function addLeadingZero(value) {
   return String(value).padStart(2, '0');
 }
@@ -83,10 +89,10 @@ function startCountDown() {
   }, 1000);
 }
 function updateTimerDisplay({ days, hours, minutes, seconds }) {
-  document.getElementById("[data-days]").textContent = addLeadingZero(days);
-  document.getElementById("[data-hours]").textContent = addLeadingZero(hours);
-  document.getElementById("[data-minutes]").textContent = addLeadingZero(minutes);
-  document.getElementById("[data-seconds]").textContent = addLeadingZero(seconds);
+  document.querySelector('span[data-days]').textContent = addLeadingZero(days);
+  document.querySelector('span[data-hours]').textContent = addLeadingZero(hours);
+  document.querySelector('span[data-minutes]').textContent = addLeadingZero(minutes);
+  document.querySelector('span[data-seconds]').textContent = addLeadingZero(seconds);
 }
 
 
