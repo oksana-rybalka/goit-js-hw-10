@@ -18,3 +18,8 @@
 @import url('./footer.css');
 @import url('./1-timer.css');
 @import url('./2-snackbar.css');
+
+.container-nav {
+  background-color: plum;
+  text-align: center;
+}

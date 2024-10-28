@@ -1,24 +1,23 @@
-/* .container-snackbar {
- 
-
-    width: 1440px;
-     
-        padding-top: 36px;
-        padding-left: 156px;
-} */
-
 .container-snackbar {
-    display: flex;
-        flex-direction:column;
-    
+        width: 520px;
+        height: 496px;
         padding-top: 36px;
         padding-left: 156px;
+        background-color: plum;
+        border-radius: 8px;
+        border-color:orchid;
+      }
+
+.form {
+    display: flex;
+     flex-direction:column;
+        
 }
    
-.container-snackbar label {
+.label-delay {
     display: flex;
     flex-direction: column;
-    
+    gap: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -26,40 +25,104 @@
     color: #2e2f42;
 
 }
- .container-snackbar input {
+ .input-delay {
     outline: 1px solid #808080;
         border-radius: 4px;
         width: 360px;
         height: 40px;
+        border: none;
+        margin-bottom: 16px;
 
  }
- .container-snackbar input:hover {
+ .input-delay:hover {
     outline: 1px solid #000;
  }
- .container-snackbar input:focus {
+ .input-delay:focus {
     outline: 1px solid #4e75ff;
  }
 
- .container-snackbar fieldset {
+
+ .Delay {
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+ }
+
+  .fieldset-state {
     border-radius: 4px;
         stroke-width: 1px;
         stroke: #808080;
         width: 360px;
+        height: 78px;
         display: flex;
-        flex-direction: column;
-        padding-top: 24px;
-        padding-bottom: 8px;
-        padding-right: 48px ;
-        padding-left: 48px;
-       
+        justify-content: space-evenly;
+        padding: 0;
+        margin-bottom: 24px;
     }
- .label-state {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    .fieldset-state:active {
+            stroke: #000;
+    }
+
+ .input-fulfilled,
+ .input-rejected {
+    border: 1px solid #757575;
+        border-radius: 14px;
+        width: 20px;
+        height: 20px;
+ }
+.input-fulfilled:focus,
+.input-rejected:focus {
+border-radius: 14px;
+    width: 12px;
+    height: 12px;
+    background: #4e75ff;
+}
+
+
+
+ .input-fulfilled:hover,
+ .input-rejected:hover {
+    border: 1px solid #000;
+        border-radius: 14px;
+        width: 20px;
+        height: 20px;
  }
 
 
+    .label-state {
+        display: flex;
+        align-items: center;
+        width: 104px;
+    }
+.Fulfilled,
+.Rejected {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2e2f42;
+}
+
+.btn-create {
+    border-radius: 8px;
+        padding: 8px 16px;
+        width: 360px;
+        height: 40px;
+        border:none;
+        background-color: #4e75ff;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+.btn-create:hover {
+    background-color: #6c8cff;
+}
 
 .back-btn,
 .nav-btn {
