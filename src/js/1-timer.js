@@ -78,11 +78,11 @@ function startCountDown() {
       dateSelectedField.disabled = false;
       return;
     }
-    const time = convertMs(msRemaining);
+    const time = convertMs(deltaTime);
     updateTimerDisplay(time);
   }, 1000);
 }
-function updateTimerDisplay(days, hours, minutes, seconds) {
+function updateTimerDisplay({ days, hours, minutes, seconds }) {
   document.getElementById("[data-days]").textContent = addLeadingZero(days);
   document.getElementById("[data-hours]").textContent = addLeadingZero(hours);
   document.getElementById("[data-minutes]").textContent = addLeadingZero(minutes);
