@@ -21,5 +21,12 @@
 
 .container-nav {
   background-color: plum;
-  text-align: center;
+  align-content: center;
+  width: 520px;
+    height: 496px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.nav {
+  padding-left: 28%;
 }

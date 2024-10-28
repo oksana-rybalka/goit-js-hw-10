@@ -6,6 +6,7 @@
         background-color: plum;
         border-radius: 8px;
         border-color:orchid;
+        margin: 0 auto;
       }
 
 .form {
@@ -50,6 +51,11 @@ letter-spacing: 0.04em;
 color: #2e2f42;
  }
 
+ .legend-state {
+    padding-left: 24px;
+  
+ }
+
   .fieldset-state {
     border-radius: 4px;
         stroke-width: 1px;
@@ -61,8 +67,9 @@ color: #2e2f42;
         padding: 0;
         margin-bottom: 24px;
     }
-    .fieldset-state:active {
+    .fieldset-state:hover {
             stroke: #000;
+            stroke-width: 2px;
     }
 
  .input-fulfilled,
@@ -74,13 +81,11 @@ color: #2e2f42;
  }
 .input-fulfilled:focus,
 .input-rejected:focus {
-border-radius: 14px;
-    width: 12px;
-    height: 12px;
+
+    width: 20px;
+    height: 20px;
     background: #4e75ff;
 }
-
-
 
  .input-fulfilled:hover,
  .input-rejected:hover {
@@ -90,12 +95,12 @@ border-radius: 14px;
         height: 20px;
  }
 
-
     .label-state {
         display: flex;
         align-items: center;
         width: 104px;
     }
+
 .Fulfilled,
 .Rejected {
     font-weight: 400;

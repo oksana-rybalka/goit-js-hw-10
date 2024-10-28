@@ -6,6 +6,7 @@ width: 520px;
     background-color: plum;
     border-radius: 8px;
     border-color:orchid ;
+    margin: 0 auto;
 }
 .main-title-gradient {
     text-align:left;
